@@ -1,0 +1,2 @@
+include ':app', ':custominputbox2'
+rootProject.name='CustomInputBox'

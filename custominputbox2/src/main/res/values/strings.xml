@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">CustomInputBox</string>
+    <string name="robotoBold">Roboto-Bold.ttf</string>
+    <string name="robotoRegular">Roboto-Regular.ttf</string>
+    <string name="dialog_btn_ok">Ok</string>
+    <string name="something_wrong">Something went wrong, but we are fixing it. Please try
+        again
+        later
+    </string>
+    <string name="error_min_value">This field must be greater than %1$s character.</string>
+    <string name="error_regex">PLease enter valid user name.</string>
+    <string name="str_title">Custom EditText</string>
+    <string name="str_phone_number">Enter your phone number</string>
+    <string name="str_credit_card">Enter your credit card number</string>
+    <string name="str_username">Username</string>
+    <string name="str_password">Password</string>
+    <string name="str_amount">Enter amount</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="minus">-</string>
+    <string name="comma">,</string>
+    <string name="dot">.</string>
+    <string name="ok">OK</string>
+</resources>

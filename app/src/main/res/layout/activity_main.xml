@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_18ssp" />
+
+
+        <com.wkb.custominputbox2.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/str_title"
+            android:imeOptions="actionNext"
+            android:digits="0123456789 ()-+/"
+            app:edt_setBackgroundColor="@android:color/white"
+            android:inputType="number"
+            android:padding="10dp"
+            app:edt_clearIconTint="#d4d2d3"
+            app:edt_setBorderColor="@android:color/black"
+            app:edt_setBorderView="true"
+            app:edt_setCornerRadius="20dp"
+            app:edt_setFont="@string/robotoRegular"
+            app:edt_setStrokeWidth="0.5dp"
+            app:edt_pattern="(###)-(### ## ##)" />
+
+
+        <com.wkb.custominputbox2.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:edt_pattern="#### #### #### ####"
+            android:digits="0123456789 ()-+/"
+            android:hint="@string/str_credit_card"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:padding="10dp"
+            app:edt_clearIconTint="#d4d2d3"
+            app:edt_setBackgroundColor="@android:color/white"
+            app:edt_setBorderColor="@android:color/black"
+            app:edt_setBorderView="true"
+            app:edt_setCornerRadius="0dp"
+            app:edt_setFont="@string/robotoRegular"
+            app:edt_setStrokeWidth="0.5dp" />
+
+        <com.wkb.custominputbox2.CustomEditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableRight="@drawable/username"
+            android:hint="@string/str_username"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:textSize="15sp"
+            app:edt_cursor="@android:color/holo_red_dark"
+            app:edt_regexp="^[a-zA-Z0-9]+(([_][a-zA-Z0-9])?[a-zA-Z0-9]*)*$"
+            app:edt_setBackgroundColor="@android:color/white"
+            app:edt_setBorderColor="@android:color/black"
+            app:edt_setBorderView="true"
+            app:edt_setCornerRadius="0dp"
+            app:edt_setFont="@string/robotoRegular"
+            app:edt_setStrokeWidth="@dimen/_1sdp" />
+
+
+        <com.wkb.custominputbox2.CustomEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/str_password"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:padding="10dp"
+            app:edt_minLength="5"
+            android:maxLength="10"
+            app:edt_setBackgroundColor="@android:color/white"
+            app:edt_setBorderView="true"
+            app:edt_setCornerRadius="4dp"
+            app:edt_setFont="@string/robotoRegular" />
+
+        <com.wkb.custominputbox2.CustomEditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/str_amount"
+            android:inputType="number"
+            android:padding="10dp"
+            app:edt_clearIconTint="#d4d2d3"
+            app:edt_setBackgroundColor="@android:color/white"
+            app:edt_setBorderColor="@android:color/black"
+            app:edt_setBorderView="true"
+            app:edt_setCornerRadius="10dp"
+            app:edt_setFont="@string/robotoRegular"
+            app:edt_setStrokeWidth="0.5dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
